@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: grid;
+            gap: 2rem;
+            height: auto;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            row-gap: 5em;
+        }
+
+        #element{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+
+        .element1{
+            flex-grow: 1;
+        }
+
+        .cont{
+            max-height: none;
+            overflow: hidden;
+            }
+
+
+        @media (max-width: 539px){
+            .cont{
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(232, 210, 210);
+                max-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <div class="container">
+        <div class="element1" id="element" ></div>
+        <div class="element2" id="element" ></div>
+        <div class="element3" id="element" ></div>
+        <div class="element4" id="element" ></div>
+        <div class="element5" id="element" ></div>
+        <div class="element5" id="element" ></div>
+        <div class="element5" id="element" ></div>
+        <div class="element5" id="element" ></div>
+        <div class="element5" id="element" ></div>
+        <div class="element5" id="element" ></div>
+        <div class="element5" id="element" ></div>
+    </div>  -->
+
+    <div class="cont">
+        <h3>this is the content</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem itaque perspiciatis repellat consequatur, quis, eaque, id fuga autem hic fugiat. Eaque ipsum exercitationem quam illo iusto id delectus quas!</p>
+    </div>
+</body>
+</html>
